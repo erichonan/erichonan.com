@@ -9,6 +9,45 @@ body	{
 	margin: 20px auto 0 auto;
 }
 
+#nav
+{
+	background-color:#000;
+	width: 100%;
+	font-size: 1.75em;
+	padding: -1px;
+	margin: 0;
+}
+
+#nav ul {
+	padding: 0 0 0 10px;
+	margin: 0;
+}
+
+#nav a, 
+#nav a:active, 
+#nav a:visited {
+	color:#FFF;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	color:red;
+	text-decoration: underline;
+}
+
+#nav li	{
+	display: inline-block;
+	padding-right: 10px;
+}
+
+#nav li {
+	border-right: 1px solid #fff;
+}
+
+#nav li:last-child {
+	border-right: none;
+	padding-left: 10px;
+}
 .portfolioPiece	{
 	border-top: 1px dashed #DDD;
 	border-bottom: 1px dashed #DDD;
@@ -51,12 +90,9 @@ body	{
 .headlineBullets li	{
 	font-size: 1.15em;
 	padding-bottom: 10px;
-	color: #2e6f8b;
+	color: #000;
 	list-style: none;
 	font-weight: bold;
-}
-#pastWork	{
-	background-color:;
 }
 
 #resumeHolder	{
@@ -82,6 +118,7 @@ body	{
 	width: 700px;
 }
 
+/*
 #backBtn	{
 	font-size: 1.5em;
 	text-align: left;
@@ -90,13 +127,38 @@ body	{
 #homeBtn	{
 	font-size: 1.5em;
 	text-align: center;
-	/*float: right;*/
 }
 #nextBtn	{
 	font-size: 1.5em;
 	text-align: right;
-	/*float: right;*/
 	margin: auto auto;
+}*/
+
+#imgContainer {
+	height: 200px;
+
+	text-align: justify;
+	-ms-text-justify: distribute-all-lines
+	text-justify: distribute-all-lines;
+
+	/* just for demo */
+	min-width: 612px;
+}
+
+.box1, .box2, .box3, .box4 {
+	width: 240px;
+	height: 170px;
+	vertical-align: top;
+	display: inline-block;
+	/**display: inline;*/
+	zoom: 1;
+}
+
+.stretch {
+	width: 100%;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0;
 }
 
 /*==========================//
@@ -142,7 +204,7 @@ li	{
 	font-style: oblique;
 	font-size: 150%;
 	line-height: 30px;
-	color: #ff5f2f; /*2e6f8b*/
+	color: red;
 	text-decoration: none;
 }
 
@@ -162,6 +224,11 @@ li	{
 
 .skills	{
 	color: red;
+}
+
+.imgBar {
+	width: 250px;
+	float: right;
 }
 
 h3 a:visited,
