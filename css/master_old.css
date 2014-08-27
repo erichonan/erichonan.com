@@ -1,0 +1,164 @@
+body	{
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000;
+}
+
+#contentContainer	
+{
+	width: 710px;
+	margin: 20px auto 0 auto;
+}
+
+.portfolioPiece	{
+	border-top: 1px dashed #DDD;
+	border-bottom: 1px dashed #DDD;
+	margin: 0 0 20px 0;
+	padding: 0 0;
+}
+
+.portfolioPiece img	{
+	float: right;
+	margin: 1px 0 1px 0;
+	padding: 0 0;
+}
+
+.pieceDescription	{
+/*	background-color: #FFF;
+*/	width: 450px;
+	margin: 0 0 0 0;
+}
+
+.clearHack	{
+	clear: both;
+}
+
+#pastWork	{
+	background-color:;
+}
+
+#resumeHolder	{
+	margin-bottom: 50px;
+}
+
+#resume	{
+	border: 1px dashed #EEE;
+	color: #555;
+}
+
+#quakerBanner	{
+/*	float: right;
+*/	width: 700px;
+	margin: 10px 0;
+}
+
+#sprintBanner	{
+	width: 640px;
+	margin: 10px auto;
+}
+#featuredNavigation	{
+	width: 700px;
+}
+
+#backBtn	{
+	font-size: 1.5em;
+	text-align: left;
+}
+
+#homeBtn	{
+	font-size: 1.5em;
+	text-align: center;
+	/*float: right;*/
+}
+#nextBtn	{
+	font-size: 1.5em;
+	text-align: right;
+	/*float: right;*/
+	margin: auto auto;
+}
+
+/*==========================//
+//			TEXT			//
+//==========================*/
+h1	{
+	font-size: 5em;
+	margin: 0 0 -3.5% -0.5%;
+}
+
+h2	{
+	margin: 30px 0 10px 0;
+}
+
+p	{
+	line-height: 125%;
+	font-size: 90%;
+}
+
+li	{
+	font-size: 90%;
+}
+
+h3 {
+	margin: 0 0 0 0;
+}
+
+#resume p,
+#resume h3,
+#resume ul,
+img	{
+	margin: 2% 2%;
+	border: 0;
+}
+
+li	{
+	margin-bottom: 0.5%;
+}
+
+.description a:link,
+.description a:hover,
+.description a:visited	{
+	font-style: oblique;
+	font-size: 110%;
+	color: red;
+	text-decoration: none;
+}
+
+.jobLocation
+{
+	font-weight: bold;
+	border-bottom: 1px dashed #AAA;
+}
+
+.jobTitle	{
+	font-style: italic;
+}
+
+.degree	{
+	font-style: italic;
+}
+
+.skills	{
+	color: red;
+}
+
+h3 a:visited,
+h3 a:hover,
+h3 a:link	{
+	text-decoration: none;
+	color: black;
+}
+
+h1 a:visited,
+h1 a:hover,
+h1 a:link	{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited	{
+	color: #AAA;
+}
+
+a:link	{
+	color: red;
+}
+
