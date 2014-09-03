@@ -12,14 +12,30 @@ body	{
 	margin: 20px auto 0 auto;
 }
 
-#headerTitle	{
-	float:left;
-	width: 600;
+#headerContainer	{
+	width:100%;
+	height: 500px;
+	background: url(../images/temp_bg.jpg);
+	background-size: 100%;
+	color: #fff;
+}
+
+#header h1 a,
+#header h1 a:visited,
+#header h1 a:hover {
+	color: #FFF;
 }
 
 #header	{
 	width: 900px;
 	margin: 20px auto 0 auto;
+}
+
+#headerTitle	{
+	float:left;
+	width: 600;
+	/*background: url(../images/temp_bg.jpg);*/
+
 }
 
 #footer	{
@@ -126,7 +142,7 @@ body	{
 .headlineBullets li	{
 	font-size: 1.15em;
 	padding-bottom: 10px;
-	color: #000;
+	color: #fff;
 	list-style: none;
 	font-weight: bold;
 }
