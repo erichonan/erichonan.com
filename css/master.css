@@ -3,21 +3,17 @@ body	{
 	color: #333;
 	padding: 0;
 	margin: 0;
-
-}
-
-#contentContainer	
-{
-	width: 900px;
-	margin: 20px auto 0 auto;
 }
 
 #headerContainer	{
+	position: fixed;
 	width:100%;
-	height: 500px;
-	background: url(../images/temp_bg.jpg);
-	background-size: 100%;
+	background-color: rgba(0,0,0,0.85);
 	color: #fff;
+	/*background: url(../images/temp_bg.jpg);*/
+	top: 0;
+	right: 0;
+	left: 0;
 }
 
 #header h1 a,
@@ -34,14 +30,24 @@ body	{
 #headerTitle	{
 	float:left;
 	width: 600;
-	/*background: url(../images/temp_bg.jpg);*/
-	margin-top: 50px;
+	margin-top: 20px;
+}
+
+#contentContainer	
+{
+	width: 900px;
+	margin: 250px auto 0 auto;
 }
 
 #footer	{
 	width: 900px;
 	margin: 0;
 	padding: 0;
+}
+
+#footer	{
+	width: 100%;
+	background-color: #000;
 }
 
 .social_media	{
@@ -61,16 +67,17 @@ body	{
 #navContainer
 {
 	width: 100%;
-	background-color:#000;
+	background-color:#333;
 	margin: 0;
 	padding: 0;
+	bottom: 0;	
 }
 
 #nav	{
 	width: 900px;
 	margin: auto;
 	font-size: 1.75em;
-	padding: -1px;
+	/*padding: -1px;*/
 
 }
 #nav ul {
@@ -103,6 +110,7 @@ body	{
 	border-right: none;
 	padding-left: 10px;
 }
+
 .portfolioPiece	{
 	border-top: 1px dashed #DDD;
 	border-bottom: 1px dashed #DDD;
@@ -130,15 +138,10 @@ body	{
 	color: #2e6f8b;
 }
 
-#footer	{
-	width: 100%;
-	background-color: #000;
-}
-
 #headerBulletsContainer	{
 	/*background-color: #EE00EE;*/
 	float: right;
-	margin-top:50px;
+	margin-top:20px;
 	padding: 0 19px 0 0;
 }
 
@@ -169,25 +172,10 @@ body	{
 	width: 640px;
 	margin: 10px auto;
 }
+
 #featuredNavigation	{
 	width: 700px;
 }
-
-/*
-#backBtn	{
-	font-size: 1.5em;
-	text-align: left;
-}
-
-#homeBtn	{
-	font-size: 1.5em;
-	text-align: center;
-}
-#nextBtn	{
-	font-size: 1.5em;
-	text-align: right;
-	margin: auto auto;
-}*/
 
 #imgContainer {
 	height: 200px;
@@ -214,6 +202,54 @@ body	{
 	display: inline-block;
 	font-size: 0;
 	line-height: 0;
+}
+
+@media (max-width: 900px) {
+
+	#headerBulletsContainer	{
+		display: none;
+	}
+
+	#header	{
+		width: 400px;
+		margin: auto;
+	}
+
+	#nav	{
+		width: 400px;
+		margin: auto;
+		font-size: 1.75em;
+		/*padding: -1px;*/
+	}
+
+	#footer	{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.pieceDescription	{
+		width: 100%;
+		margin: 0 0 0 0;
+	}
+
+	.portfolioPiece img	{
+		float: none;
+		margin: 1px 0 1px 0;
+		padding: 0 0;
+	}
+
+	#contentContainer	
+	{
+		width: 100%;
+		margin: 250px auto 0 auto;
+	}
+
+	.imgBar {
+		width: 250px;
+		float: none;
+		margin: auto;
+	}
 }
 
 /*==========================//
@@ -284,6 +320,7 @@ li	{
 .imgBar {
 	width: 250px;
 	float: right;
+	background-color:#000000;
 }
 
 h3 a:visited,
