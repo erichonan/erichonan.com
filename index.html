@@ -13,13 +13,13 @@
 	<link rel="styleSheet" type="text/css" href="css/master.css" media="all" />
 </head>
 <body>
-	<div id="headerContainer">
+	<header id="headerContainer">
 		<div id="header">
 			<div id="headerTitle">
-				<h1><a href="index.html">Eric Honan</a></h1>
-				<p class="description"><a href="http://www.erichonan.com">iOS/Objective-C, PHP/mySQL, AS3</a></p>
+				<h1><a href="index.html">TEST HEADER</a></h1>
+				<!--<p class="description"><a href="http://www.erichonan.com">iOS/Objective-C, PHP/mySQL, AS3</a></p>-->
 			</div>
-
+		<!--
 			<div id="headerBulletsContainer">
 				<ul class="headlineBullets">
 					<li>Seven Years Experience</li>
@@ -28,11 +28,12 @@
 					<li>NYC/NJ/Remote</li>
 				</ul>
 			</div>
+		-->
 		</div>
 
 		<div class="clearHack"></div>
 
-		<div id="navContainer">
+		<nav id="navContainer" class="header-bottom">
 			<div id="nav">
 				<ul>
 					<li><a href="#resumeHolder">Resume</a></li>
@@ -40,11 +41,11 @@
 					<li><a href="/blog">Blog</a></li>
 				</ul>
 			</div>
-		</div>
-	</div>
+		</nav>
+	</header>
 
 	<div id="contentContainer">
-		<div id="projects">
+		<section id="projects" class="waypoint" data-animate-down="header-shrink" data-animate-up="header-grow">
 			<h2><a name="projectsHeading">FCB</a></h2>
 			<h3><a href="hanwhasolar.html">Digital Advertising</a></h3>
 			<div class="portfolioPiece">
@@ -117,10 +118,10 @@
 				</div>
 				<div class="clearHack"></div>
 			</div>
-		</div>
+		</section>
 
 <!-- /////////////////////////////////////////// RESUME /////////////////////////////////////////// -->
-		<div id="resumeHolder">
+		<section id="resumeHolder">
 			<h2>Resume</h2>
 			<div id="resume">
 				<h3>Qualifications:</h3>
@@ -196,7 +197,7 @@
 			</div>
 						<!--<p class="contact"><a href="https://twitter.com/#!/erichonan/">You should follow me on twitter.</a> And feel free to email me: eric at erichonan dot com.</p>-->
 		</div>
-	</div>
+	</section>
 	<div id="footer">
 		<div class="social_media">
 			<ul>
@@ -213,7 +214,46 @@
 		</div>
 		<div class="clearHack"></div>
 	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="scripts/waypoints/waypoints.min.js"></script>
 	<script type="text/javascript">
+
+	var $head = $('#header');
+	$( '.waypoint').each( function(i){
+		var $el = $( this ),
+			animClassDown = $el.data( 'animateDown' ),
+			animClassUp = $el.data( 'animateUp');
+
+		$el.waypoint( function(direction){
+			if( direction === 'down' && animClassDown) {
+/*				$head.attr('class','header ' + animClassDown);
+				$("#headerBulletsContainer").styles({vis})
+				*/
+				shrinkHeader();
+			}
+			else if(direction === 'up' && animClassUp ){
+				//$head.attr('class', 'header ' + animClassUp);
+				expandHeader();
+			}
+		} );
+	} );
+
+	function shrinkHeader() {
+		// remove headerBulletsContainer
+		$("#headerBulletsContainer").addClass("bullets-hide");
+		$("p.description").addClass("description-hide");
+		// set height of header to 50px
+		$("#header").addClass("header-shrink");
+		// 
+	}
+
+	function expandHeader() {
+		$("#headerBulletsContainer").removeClass("bullets-hide");
+		$("p.description").removeClass("description-hide");
+	}
+
+
+	/* analytics below */
 	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 	</script>

@@ -9,6 +9,7 @@ body	{
 	position: fixed;
 	width:100%;
 	background-color: rgba(0,0,0,0.85);
+	height: 300px;
 	color: #fff;
 	/*background: url(../images/temp_bg.jpg);*/
 	top: 0;
@@ -24,13 +25,15 @@ body	{
 
 #header	{
 	width: 900px;
+	height: 100%;	
 	margin: auto;
+	vertical-align: middle;
 }
 
 #headerTitle	{
-	float:left;
-	width: 600;
-	margin-top: 20px;
+	display: inline-block;
+	height: 50px;
+	vertical-align: middle;
 }
 
 #contentContainer	
@@ -143,6 +146,7 @@ body	{
 	float: right;
 	margin-top:20px;
 	padding: 0 19px 0 0;
+	transition:opacity 0.5s;
 }
 
 .headlineBullets li	{
@@ -256,7 +260,7 @@ body	{
 //			TEXT			//
 //==========================*/
 h1	{
-	font-size: 4em;
+	font-size: 2.5em;
 	margin: 0 0 -1.5% -0.5%;
 }
 
@@ -345,3 +349,23 @@ a:link	{
 	color: red;
 }
 
+.header-shrink {
+	height:30px;
+	transition:height 2s;
+}
+
+.header-grow {
+	height: 400px;
+	transition:height 2s;
+
+}
+
+.bullets-hide, 
+.description-hide {
+	opacity: 0;
+}
+
+.bullets-show {
+	opacity: 1;
+	transition: 1s;
+}
