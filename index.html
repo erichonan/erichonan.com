@@ -14,12 +14,17 @@
 </head>
 <body>
 	<header id="headerContainer">
-		<div id="header">
-			<div id="headerTitle">
+		<div id="header" class="ha-header">
+			<div class="ha-header-perspective">
+				<div id="headerTitle" class="ha-header-front">
+					<h1><span>Eric Honan: iOS/web developer</span></h1>
+				</div>
+		<!--<div id="headerTitle" class="ha-header">
+				<h1><span>Test Header</span></h1>
 				<h1><a href="index.html">TEST HEADER</a></h1>
-				<!--<p class="description"><a href="http://www.erichonan.com">iOS/Objective-C, PHP/mySQL, AS3</a></p>-->
+				<p class="description"><a href="http://www.erichonan.com">iOS/Objective-C, PHP/mySQL, AS3</a></p>
 			</div>
-		<!--
+		
 			<div id="headerBulletsContainer">
 				<ul class="headlineBullets">
 					<li>Seven Years Experience</li>
@@ -28,16 +33,17 @@
 					<li>NYC/NJ/Remote</li>
 				</ul>
 			</div>
-		-->
+		
 		</div>
 
 		<div class="clearHack"></div>
-
+-->
 		<nav id="navContainer" class="header-bottom">
 			<div id="nav">
 				<ul>
-					<li><a href="#resumeHolder">Resume</a></li>
 					<li><a href="#projects">Projects</a></li>
+					<li><a href="#history">Work history</a></li>
+					<li><a href="#resumeHolder">Resume</a></li>
 					<li><a href="/blog">Blog</a></li>
 				</ul>
 			</div>
@@ -45,7 +51,74 @@
 	</header>
 
 	<div id="contentContainer">
-		<section id="projects" class="waypoint" data-animate-down="header-shrink" data-animate-up="header-grow">
+		<section id="introduction" class="waypoint" data-animate-down="header-shrink" data-animate-up="header-grow">
+			<h2>Hello,</h2>
+			<p>I am an interactive developer with over seven years experience with agencies, startups, and freelance. During my career I have acquired a diverse set of skills including: iOS/Objective-C, HTML5/CSS/Javascript, PHP, MySQL, Flash and Actionscript 3.</p>
+
+			<p>Two years ago I transitioned into iOS/Objective-C development. I have one app approved for release by the appstore but it is not yet public. Examples of my iOS abilities can be found <a href="">here</a>. I am looking for roles allow me to work with a small team of talented designers and developers who create apps for mobile platforms.</p>
+
+			<p>I grew up near Portland, Oregon and moved to NYC 5 years ago. I now live in Jersey City with my wife and a cat. We co-founded HFactories a year ago.</p>
+
+			<div class="social_media">
+				<h3>Follow along</h3>
+				<ul>
+					<li><a href="https://github.com/erichonan">Github</a></li>
+					<li><a href="https://twitter.com/erichonan">Twitter</a></li>
+					<li><a href="http://instagram.com/efactor/">Instagram</a></li>
+					<li><a href="http://www.linkedin.com/pub/eric-honan/8/206/861/">LinkedIn</a></li>
+				<ul>
+			</div>
+		</section>
+
+		<section id="projects">
+			<h2>Current Projects</h2>
+			<div class="project">
+				<h3>Wine Rating app</h3>
+				<p>Track and rate the wines you have tasted</p>
+				<p>Project Status: Approved by apple, yet to be released</p>
+				<p><em>Description of work done for project goes here</em></p>
+				<!--
+				<ul>
+					<li><a href="">Download</a></li>
+					<li><a href="">View code samples</a></li>
+				<ul>
+				-->
+	          	<img src="" width="100x200">
+	          	<img src="" width="100x200">
+	          	<img src="" width="100x200">
+	        </div>
+
+			<div class="project">
+				<h3>PingPong Champion</h3>
+				<p>Turn a bumbling amateur into a champion</p>
+				<p>Project Status: Live in the app store</p>
+				<ul>
+					<li><a href="">Download</a></li>
+					<li><a href="">View code samples</a></li>
+				<ul>
+
+	          	<img src="" width="100x200">
+	          	<img src="" width="100x200">
+	          	<img src="" width="100x200">
+	        </div>
+
+			<div class="project">
+				<h3>Minesweeper clone</h3>
+				<p>You know the drill - clear the mines, get a smiley face. Just like the 90s.</p>
+				<p>Project Status: In development</p>
+				<ul>
+					<li><a href="">Download</a></li>
+					<li><a href="">View code samples</a></li>
+				<ul>
+
+	          	<img src="" width="100x200">
+	          	<img src="" width="100x200">
+	          	<img src="" width="100x200">
+	        </div>
+
+		</section>
+
+		<section id="history">
 			<h2><a name="projectsHeading">FCB</a></h2>
 			<h3><a href="hanwhasolar.html">Digital Advertising</a></h3>
 			<div class="portfolioPiece">
@@ -206,13 +279,6 @@
 				<li><a href="http://instagram.com/efactor/">Instagram</a></li>
 			</ul>
 		</div>
-		<div class="general_info">
-			<p>Vestibulum malesuada leo quis sem feugiat molestie. Morbi pellentesque vestibulum odio, in tincidunt elit maximus sed. Nam tincidunt libero eu ipsum maximus ultrices. Mauris sollicitudin facilisis vulputate. Pellentesque pretium sit amet diam ac semper. Maecenas ac augue condimentum, blandit nunc eu, hendrerit orci. Suspendisse a libero ac nibh tempus varius nec in dui. Quisque est dolor, hendrerit non elit eget, efficitur luctus ante. Vestibulum eu risus libero. Morbi massa est, feugiat a velit at, vestibulum vulputate ante. Ut ac elit vel leo malesuada malesuada. Sed non neque molestie turpis condimentum vulputate.</p>
-		</div>
-		<div class="blog_feature">
-			<p>Blog Feature</p>
-		</div>
-		<div class="clearHack"></div>
 	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="scripts/waypoints/waypoints.min.js"></script>
@@ -226,32 +292,13 @@
 
 		$el.waypoint( function(direction){
 			if( direction === 'down' && animClassDown) {
-/*				$head.attr('class','header ' + animClassDown);
-				$("#headerBulletsContainer").styles({vis})
-				*/
-				shrinkHeader();
+				$(".ha-header-perspective").addClass("header-small");
 			}
 			else if(direction === 'up' && animClassUp ){
-				//$head.attr('class', 'header ' + animClassUp);
-				expandHeader();
+				$(".ha-header-perspective").removeClass("header-small");
 			}
-		} );
+		}, { offset: 225 } );
 	} );
-
-	function shrinkHeader() {
-		// remove headerBulletsContainer
-		$("#headerBulletsContainer").addClass("bullets-hide");
-		$("p.description").addClass("description-hide");
-		// set height of header to 50px
-		$("#header").addClass("header-shrink");
-		// 
-	}
-
-	function expandHeader() {
-		$("#headerBulletsContainer").removeClass("bullets-hide");
-		$("p.description").removeClass("description-hide");
-	}
-
 
 	/* analytics below */
 	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
