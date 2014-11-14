@@ -53,6 +53,7 @@ body	{
 	color: #2d383f;
 	width:100%;
 	height: 100%;
+	font-size: 3em;
 }
 
 .ha-header h1::before {
@@ -85,6 +86,7 @@ body	{
 
 #footer	{
 	width: 900px;
+	height: 200px;
 	margin: 0;
 	padding: 0;
 }
@@ -95,12 +97,20 @@ body	{
 }
 
 .social_media	{
-	width: 300px;
 	margin: auto;
+	height: 100%;
+}
+
+.social_media ul	{
+	vertical-align: middle;
+	margin: auto;
+	width: 500px;
+	height: 100px;
 }
 
 .social_media li
 {
+	font-size: 2em;
 	display: inline-block;
 	decoration: none;
 }
@@ -320,6 +330,7 @@ h1	{
 */
 h2	{
 	margin: 30px 0 10px 0;
+	font-size:1.5em;
 }
 
 p	{
